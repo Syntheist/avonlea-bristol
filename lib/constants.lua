@@ -5,10 +5,10 @@ local constants = {}
 
 -- ===== Geographic Settings =====
 constants.LOCATION = {
-  LATITUDE = 51.45451,   -- Prince Edward Island
+  LATITUDE = 51.45451,   -- Bristol, UK
   LONGITUDE = -2.58791,
   ELEVATION = 16,         -- Meters
-  TIMEZONE = 0,         -- ADT (Atlantic Daylight Time)
+  TIMEZONE = 0,         -- GMT (Greenwich Mean Time)
   VIEW_AZIMUTH = 280,    -- View direction (180=South)
   FOV = 120              -- Field of view (degrees)
 }
