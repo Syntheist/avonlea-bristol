@@ -13,7 +13,7 @@ local show_params_time = 0
 
 local util = require "util"
 local constants = include("lib/constants")
-engine.name = "Avonlea-bristol" -- engine
+engine.name = "Avonlea" -- engine
 
 -- Include modules
 local avonlea = include("lib/avonlea_engine") -- Sound engine
