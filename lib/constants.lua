@@ -5,11 +5,11 @@ local constants = {}
 
 -- ===== Geographic Settings =====
 constants.LOCATION = {
-  LATITUDE = 46.49300,   -- Prince Edward Island
-  LONGITUDE = -63.38729,
-  ELEVATION = 4,         -- Meters
-  TIMEZONE = -3,         -- ADT (Atlantic Daylight Time)
-  VIEW_AZIMUTH = 180,    -- View direction (180=South)
+  LATITUDE = 51.45451,   -- Prince Edward Island
+  LONGITUDE = -2.58791,
+  ELEVATION = 16,         -- Meters
+  TIMEZONE = 0,         -- ADT (Atlantic Daylight Time)
+  VIEW_AZIMUTH = 280,    -- View direction (180=South)
   FOV = 120              -- Field of view (degrees)
 }
 
