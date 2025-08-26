@@ -191,11 +191,11 @@ function init()
 
     -- Add date and time settings
   params:add_separator("Location Settings")
-  params:add{type = "number", id = "constants.LOCATION.LATITUDE)", name = "Latitude", min=-180, max=180, default = constants.LOCATION.LATITUDE), action=function(x) constants.LOCATION.LATITUDE) = x end }
+  params:add{type = "number", id = "constants.LOCATION.LATITUDE", name = "Latitude", min=-180, max=180, default = constants.LOCATION.LATITUDE, action=function(x) constants.LOCATION.LATITUDE = x end }
 
-  params:add{type = "number", id = "constants.LOCATION.LONGITUDE)", name = "Longitude", min=-180, max=180, 
-    default = constants.LOCATION.LONGITUDE),
-    action=function(x) constants.LOCATION.LONGITUDE) = x end }
+  params:add{type = "number", id = "constants.LOCATION.LONGITUDE", name = "Longitude", min=-180, max=180, 
+    default = constants.LOCATION.LONGITUDE,
+    action=function(x) constants.LOCATION.LONGITUDE = x end }
 
   -- Add date and time settings
   params:add_separator("Moon Settings")
