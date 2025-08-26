@@ -191,7 +191,9 @@ function init()
 
     -- Add date and time settings
   params:add_separator("Location Settings")
-  params:add{type = "number", id = "constants.LOCATION.LATITUDE", name = "Latitude", min=-180, max=180, default = constants.LOCATION.LATITUDE, action=function(x) constants.LOCATION.LATITUDE = x end }
+  params:add{type = "number", id = "constants.LOCATION.LATITUDE", name = "Latitude", min=-180, max=180, 
+    default = constants.LOCATION.LATITUDE, 
+    action=function(x) constants.LOCATION.LATITUDE = x end }
 
   params:add{type = "number", id = "constants.LOCATION.LONGITUDE", name = "Longitude", min=-180, max=180, 
     default = constants.LOCATION.LONGITUDE,
@@ -199,6 +201,10 @@ function init()
 
   -- Add date and time settings
   params:add_separator("Moon Settings")
+
+  params:add{type = "number", id = "constants.LOCATION.TIMEZONE", name = "Timezone", min=-12, max=12, 
+    default = constants.LOCATION.TIMEZONE,
+    action=function(x) constants.LOCATION.TIMEZONE = x end }
 
   params:add_number("year", "Year", 2020, 2030, current_date.year)
   params:set_action("year", function(x)
